@@ -35,10 +35,15 @@ body {
 }
 
 .myname {
-  font-size: 25px;
-  margin-top: 30px;
-  margin-left: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 15px;
   color: black;
+  font-size: 25px;
+  background-color: #efe4d0;
+  z-index:1000;
 }
 
 .myname:hover {
@@ -46,119 +51,100 @@ body {
 }
 
 .about-box {
-  width: 1200px;
-  height: 500px;
-  margin-left: 20px;
-  /*background-color: red;*/
+  width: 100%;
+  float: left;
+  padding-left: 10px;
 }
 
 .avatar-div {
   float: left;
-  width: 250px;
-  height: 480px;
-  margin: 10px 10px;
-  /*background-color: grey;*/
+  width: 50%;
+  font-size: 10px; 
+  margin-top: 80px; 
+  /*margin-left: 0px;*/
 }
+
+#info {
+  margin-bottom: -7px;
+}
+
+/*.avatar-image {
+  float: left;
+  width: 50%;
+  margin-top: 80px;
+}*/
 
 .avatar {
-  width: 80%;
-  margin-left: 0px;
-}
-
-#ava-info {
-  font-size: 14px;
+  width: 70%;
+  /*margin-left: 0px;*/
 }
 
 .about-text {
+  width: 100%;
   float: left;
-  width: 900px;
-  height: 480px;
-  margin-left: 10px;
-  /*background-color: purple;*/
+  text-align: justify;
+  font-size: 15px;
+  padding-top: 10px;
 }
 
-#about-info {
-  font-size: 18px;
-}
 
 .chapter {
   font-size: 30px;
-  margin-left: 30px;
 }
 
-.subchapter {
+/*.subchapter {
   font-size: 18px;
   margin-top: -20px;
   margin-left: 30px;
-}
+}*/
 
 .projects-row {
-  width: 98%;
-  height: 600px;
-  margin-left: 20px;
-  /*background-color: red;*/
-}
-
-.project-left {
+  width: 100%;
   float: left;
-  width: 48%;
-  height: 580px;
-  margin: 10px 10px;
-  position: relative;
-  /*background-color: grey;*/
+  margin: 0px 10px 0px;
 }
 
-.project-right {
+.project-box {
+  width: 100%;
   float: left;
-  width: 48%;
-  height: 580px;
-  margin: 10px 10px;
-  position: relative;
-  /*background-color: purple;*/
 }
 
-.project-left:hover {
+.project-box:hover {
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+}
+
+/*.project-left:hover {
   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
 }
 
 .project-right:hover {
   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
-}
+}*/
 
-.fields-of-research {
-  font-size: 12px;
-  margin-left: 10px;
-  margin-top: 5px;
-}
-
-img {
+/*img {
   max-width: 100%;
   max-height: 100%;
   margin: auto;
   display: block;
+}*/
+
+img {
+  width: 100%;
 }
 
 .white-box {
   background-color: white;
-  width: 98%;
-  height: 70%;
-  margin-left: 10px;
+  width: 100%;
 }
 
-.project-cover {
-  height: auto;
-  width: auto;
-}
 
 .project-title {
   font-size: 18px;
-  margin-left: 10px;
   margin-top: 10px;
 }
 
 .project-definition {
   font-size: 12px;
-  margin-left: 10px;
   margin-top: -10px;
 }
 
@@ -171,11 +157,20 @@ a {
   padding: 8px 15px;
   font-size: 12px;
   cursor: pointer;
+  text-align: center;
+  position: absolute;
+} 
+
+/*.project-button {
+  border: none;
+  padding: 8px 15px;
+  font-size: 12px;
+  cursor: pointer;
   margin-top: 7px;
   text-align: center;
   position: absolute;
   bottom: 0;
-}
+}*/
 
 .project-pdf {
   background-color: LightSkyBlue;
@@ -221,11 +216,11 @@ a {
   color: red;
 }
 
-.images-row {
+/*.images-row {
   width: 98%;
   height: 500px;
   margin-left: 20px;
-  /*background-color: red;*/
+  /*background-color: red;
 }
 
 .image-left {
@@ -234,7 +229,7 @@ a {
   height: 480px;
   margin: 10px 10px;
   position: relative;
-  /*background-color: grey;*/
+  /*background-color: grey;
 }
 
 .image-right {
@@ -243,7 +238,7 @@ a {
   height: 480px;
   margin: 10px 10px;
   position: relative;
-  /*background-color: purple;*/
+  /*background-color: purple;
 }
 
 .white-box-images {
@@ -251,57 +246,48 @@ a {
   width: 98%;
   height: 90%;
   margin-left: 10px;
-}
+}*/
 
 .scientific-activities-chapter {
-  width: 98%;
-  height: 450px;
-  margin-left: 20px;
-  /*background-color: red;*/
+  float: left;
+  width: 100%;
+  /*margin-left: 20px;*/
 }
 
 .scientific-activities-box {
   float: left;
-  width: 20%;
-  height: 440px;
-  margin: 5px 5px;
-  position: relative;
-  /*background-color: blue;*/
+  width: 100%;
 }
 
-.scientific-activities-cover {
-  height: 65%;
-  width: 65%;
+#poster-size {
+  width: 60%;
+}
+
+.doc-captions {
+  font-size: 12px;
+  margin-top: 10px;
+  width: 60%;
+  text-align: justify;
 }
 
 .thesis-chapter {
-  width: 98%;
-  height: 400px;
-  margin-left: 20px;
-  /*background-color: red;*/
+  width: 100%;
+  float: left;
+  /*margin-left: 20px;*/
 }
 
 .thesis-box {
+  width: 100%;
   float: left;
-  width: 20%;
-  height: 390px;
-  margin: 5px 5px;
-  position: relative;
-  /*background-color: blue;*/
-}
-
-.thesis-cover {
-  height: 65%;
-  width: 65%;
 }
 
 .thesis-button {
   border: none;
-  padding: 5px 10px;
-  font-size: 10px;
+  padding: 8px 15px;
+  font-size: 12px;
   cursor: pointer;
-  margin-top: 7px;
   text-align: center;
+  position: absolute;
 }
 
 .footer {
@@ -329,56 +315,83 @@ a {
 }
 
 
-/*.menu-button {
-  border: none;
-  background-color: rgba(143, 188, 143, 0);
-  padding: 10px 20px;
-  font-size: 14px;
-  cursor: pointer;
-  margin-left: 10px;
+
+/*   FOR IPAD  */
+@media only screen and (min-width: 768px) {
+
+  .avatar-div {
+    font-size: 10px; 
+    width: 30%;
+    margin-bottom: 30px;
+  }
+
+  .avatar {
+    width: 70%;
+  }
+
+  .about-text {
+    width: 60%;
+    font-size: 15px;
+    margin-top: 80px;
+    /*margin-left: 30px;*/
+  }
+
+  .projects-row {
+    margin: 0px 5px 0px;
+  }
+
+  #poster-size {
+    width: 40%;
+  }
+
+  .doc-captions {
+    width: 40%;
+  }
+
 }
 
-.menu-center {
-  margin: auto;
-  width: 50%;
-  border: none;
-  text-align: center;
+/*   FOR BROWSER  */
+@media only screen and (min-width: 1000px) {
+
+  .avatar-div {
+    width: 20%;
+    font-size: 12px; 
+    padding-left: 20px;
+  }
+
+  .avatar {
+    width: 60%;
+  }
+
+  .about-text {
+    width: 51%;
+    font-size: 15px;
+    padding-top: 15px;
+  }
+
+  .projects-row {
+    width: 100%;
+  }
+
+  .project-box {
+    width: 48%;
+    margin: 5px 10px 5px;
+  }
+
+  #poster-size {
+    width: 15%;
+  }
+
+  .scientific-activities-box {
+    margin-left: 10px;
+  }
+
+  .thesis-box {
+    margin-left: 10px;
+  }
+
+  .doc-captions {
+    width: 15%;
+  }
+
 }
-
-
-
-.aboutme {
-  color: black;
-}
-
-.aboutme:hover {
-  background-color: CornflowerBlue	;
-  color: white;
-}
-
-.uniprojects {
-  color: black;
-}
-
-.uniprojects:hover {
-  background-color: coral;
-  color: white;
-}
-
-.scientific {
-  color: black;
-}
-
-.scientific:hover {
-  background-color: darkviolet;
-  color: white;
-}
-
-.thesis {
-  color: black;
-}
-
-.thesis:hover {
-  background-color: gold;
-  color: black;
-}*/

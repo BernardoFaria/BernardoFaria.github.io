@@ -8,33 +8,35 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <a href="bernardo-faria-cv.pdf" target="_blank"><p class="titles myname">Bernardo Gonçalves de Faria, MSc</p></a>
+        <div class="myname">
+            <a href="bernardo-faria-cv.pdf" target="_blank"><p class="titles">Bernardo Gonçalves de Faria, MSc</p></a>
+        </div>
         
         <!-- ABOUT ME -->
         <div class="about-box">
-            <div class="avatar-div" id="ava-info">
+            <div class="avatar-div">
                 <img class="avatar" src="avatar.png" alt="avatar">
-                <p class="titles subtext-ava">
+                <p class="titles" id="info">
                     <strong>E-mail:</strong>
                     <br>
                     bernardo.goncalves.faria@gmail.com
                 </p>
-                <p class="titles">
+                <p class="titles" id="info">
                     <strong>Mobile:</strong>
                     <br>
                     +351 965 169 732
                 </p>
-                <p class="titles">
+                <p class="titles" id="info">
                     <strong>Location:</strong>
                     <br>
                     Lisbon, Portugal
-                </p-->
-                <p class="titles">
+                </p>
+                <p class="titles" id="info">
                     <a class="cv-button" href="bernardo-faria-cv.pdf" target="_blank"><strong>CV here</strong>
                     </a>
-                </p-->
+                </p>
             </div>
-            <div class="about-text" id="about-info">
+            <div class="about-text">
                 <p class="titles">Bernardo Gonçalves de Faria is a Computer Engineer graduated from Instituto Superior Técnico in Lisbon, Portugal. 
                     He holds a Bachelors Degree in Computer Science and Engineering, and a Masters Degree in the same area, where he specialized in two fields: 
                     <strong>Interaction and Visualization</strong>, where he explores concepts of <em>User-Centered Design and Evaluation</em>, 
@@ -45,76 +47,62 @@
                     intending to contribute in the future to more innovative projects in the most diversed areas of Engineering and Information Technology.</p>
             </div>
         </div>
-        <hr color="grey" width="97%">
-        <!-- MAIN BUTTONS -->
-        <!--div class="menu-center">
-            <a href="aboutme.html">
-                <button class="menu-button aboutme">About Me</button>
-            </a>
-            <a href="universityprojects.html">
-                <button class="menu-button uniprojects">University Projecs</button>
-            </a>
-            <a href="scientificactivities.html">
-                <button class="menu-button scientific">Scientific Activities</button>
-            </a>
-            <a href="thesis.html">
-                <button class="menu-button thesis">Thesis</button>
-            </a>
-        </div>
-        <hr-->        
-       
 
-        
+
+
+        <hr>       
+    
+
+
         <!-- PROJECTS -->
         <p class="titles chapter">Projects</p>
         <!--p class="titles subchapter">University Projects at Instituto Superior Técnico (IST)</p-->
         <div class="projects-row">
-            <div class="project-left">
-                <p class="titles fields-of-research"><strong>...</strong></p>
+            <div class="project-box" style="padding-bottom: 30px;">
+                <p class="titles" style="font-size: 12px;"><strong>...</strong></p>
                 <div class="white-box">
-                    <img class="project-cover" src="black-board.png" alt="coming-soon"-->
-                    <p style="color: white; font-size: 60px; margin-top: -240px; margin-left: 200px;">coming soon...</p>
+                    <img src="black-board.png" alt="coming-soon">
                 </div>
                 <p class="titles project-title">...</p>
                 <p class="titles project-definition">...</p>
+                <a href="projects/implantigraph/implantigraph-extended.pdf" target="_blank" style="display: none;">
+                    <button class="project-button project-pdf">PDF</button>
+                </a>
             </div>
-            <div class="project-right">
-                <p class="titles fields-of-research"><strong>Masters Thesis</strong></p>
+            <div class="project-box" style="padding-bottom: 30px;">
+                <p class="titles" style="font-size: 12px;"><strong>Masters Thesis</strong></p>
                 <div class="white-box">
-                    <img class="project-cover" src="projects/implantigraph/linking_3.png" alt="implantigraph-cover">
+                    <img src="projects/implantigraph/linking_3.png" alt="implantigraph-cover">
                 </div>
                 <p class="titles project-title">IMPLANTIGRAPH</p>
                 <p class="titles project-definition">A VR studying and teaching tool that aims to explore anatomical graphs and 3D 
                     labeling with anatomical information focused on dental implantology.</p>
-                <div>
-                    <a href="projects/implantigraph/implantigraph-extended.pdf" target="_blank">
-                        <button class="project-button project-pdf" style="margin-left: 10px;">PDF</button>
-                    </a>
-
-                    <a href="https://drive.google.com/file/d/1QG9lgIdMPtmzVuhe1sg9QA-Ot25t_QMB/view?usp=sharing" target="_blank">
-                        <button class="project-button project-video" style="margin-left: 64px;">Video</button>
-                    </a>
-                </div>
+                <a href="projects/implantigraph/implantigraph-extended.pdf" target="_blank">
+                    <button class="project-button project-pdf">PDF</button>
+                </a>
+                <a href="https://drive.google.com/file/d/1oMtaVLR034C4vdRCoawXPcdOLHxjsYod/view?usp=sharing" target="_blank">
+                    <button class="project-button project-video" style="margin-left: 54px;">Video</button>
+                </a>
             </div>
         </div>
 
         <div class="projects-row">
-            <div class="project-left">
-                <p class="titles fields-of-research"><strong>Virtual Reality</strong></p>
+            <div class="project-box" style="padding-bottom: 30px;">
+                <p class="titles" style="font-size: 12px;"><strong>Virtual Reality</strong></p>
                 <div class="white-box">
-                    <img class="project-cover" src="projects/virtual-workspace/virtual-workspace-unity-draft.png" alt="virtual-workspace-cover">
+                    <img src="projects/virtual-workspace/virtual-workspace-unity-draft.png" alt="virtual-workspace-cover">
                 </div>
                 <p class="titles project-title">Virtual Workspace</p>
                 <p class="titles project-definition">A VR tool that allows interaction (writing, highlighting, connections) with and 
                     within text documents in a virtual environment.</p>
                 <a href="images.html">
-                    <button class="project-button project-images" style="margin-left:10px";>Images</button>
+                    <button class="project-button project-images";>Images</button>
                 </a>
             </div>
-            <div class="project-right">
-                <p class="titles fields-of-research"><strong>Interaction Design Studio</strong></p>
+            <div class="project-box" style="padding-bottom: 30px;">
+                <p class="titles" style="font-size: 12px;"><strong>Interaction Design Studio</strong></p>
                 <div class="white-box">
-                    <img class="project-cover" src="projects/mobilityp/mobilityp-cover.png" alt="mobilityp-cover">
+                    <img src="projects/mobilityp/mobilityp-cover.png" alt="mobilityp-cover">
                 </div>
                 <p class="titles project-title">mobilityp</p>
                 <p class="titles project-definition">A high-fidelity prototype of a mobile application for an inclusive technological solution 
@@ -123,109 +111,104 @@
                     parked on a low mobility parking, and send the information through the application to the authorities, 
                     and (3) "Mobility Map", a map with pins for easy access to public transportation, low mobility 
                     parking or accessibility problem.</p>
-                <div>
-                    <a href="https://github.com/BernardoFaria/BernardoFaria.github.io/blob/main/projects/mobilityp/mobilityp-video.mp4" type="video/mp4" target="_blank">
-                        <button class="project-button project-video" style="margin-left: 10px;">Video</button>
-                    </a>
-                    <a href="https://github.com/BernardoFaria/BernardoFaria.github.io/blob/main/projects/mobilityp/mobilityp-add.mp4" type="video/mp4" target="_blank">
-                        <button class="project-button project-ad" style="margin-left: 64px;">Ad</button>
-                    </a>
-                </div>
+                <a href="https://drive.google.com/file/d/1jGB8CWmwS5_4-GWFJv2nETKyRwsIxtP8/view?usp=sharing" type="video/mp4" target="_blank">
+                    <button class="project-button project-video">Video</button>
+                </a>
+                <a href="https://drive.google.com/file/d/1D2z_8zfVh1ccGh1_hVEtBDtrQsZ5O91O/view?usp=sharing" type="video/mp4" target="_blank">
+                    <button class="project-button project-ad" style="margin-left: 54px;">Ad</button>
+                </a>
             </div>
         </div>
 
         <div class="projects-row">
-            <div class="project-left">
-                <p class="titles fields-of-research"><strong>Interaction Design Studio</strong></p>
+            <div class="project-box" style="padding-bottom: 30px;">
+                <p class="titles" style="font-size: 12px;"><strong>Interaction Design Studio</strong></p>
                 <div class="white-box">
-                    <img class="project-cover" src="projects/bitloaner/bitloaner-homepage.png" alt="bitloaner-cover">
+                    <img src="projects/bitloaner/bitloaner-homepage.png" alt="bitloaner-cover">
                 </div>
                 <p class="titles project-title">bitloaner</p>
                 <p class="titles project-definition">A high-fidelity prototype of a mobile application of new forms of interaction for 
                     decentralized finances, allowing users to (1) check their own loans, (2) ask for an 
                     amount from other users based on a trust ranking, (3) invest, and (4) track their own personal status.</p>
-                <a href="https://github.com/BernardoFaria/BernardoFaria.github.io/blob/main/projects/bitloaner/bitloaner-video.mp4" type="vidoe/MP4" target="_blank">
-                    <button class="project-button project-video" style="margin-left:10px";>Video</button>
+                <a href="https://drive.google.com/file/d/1YI0MZPRAWl3aC6I7mhpuQ14oTuQgZtyA/view?usp=sharing" type="vidoe/MP4" target="_blank">
+                    <button class="project-button project-video">Video</button>
                 </a>
             </div>
-            <div class="project-right">
-                <p class="titles fields-of-research"><strong>User-Centered Design and Evaluation</strong></p>
+            <div class="project-box" style="padding-bottom: 30px;">
+                <p class="titles" style="font-size: 12px;"><strong>User-Centered Design and Evaluation</strong></p>
                 <div class="white-box">
-                    <img class="project-cover" src="projects/trainsafe/trainsafe-cover.png" alt="trainsafe-cover">
+                    <img src="projects/trainsafe/trainsafe-cover.png" alt="trainsafe-cover">
                 </div>
                 <p class="titles project-title">trainSafe</p>
                 <p class="titles project-definition">A mobile application for gym users during the pandemic, allowing them to (1) report if they 
                     got infected with COVID-19, (2) book gym slots to avoid mass gatherings, and (3) a profile 
                     page with personal progress, training plans and virtual identification to enter the gym.</p>
-                <div>
-                    <a href="projects/trainsafe/trainsafe-report.pdf" target="_blank">
-                        <button class="project-button project-pdf" style="margin-left: 10px;">PDF</button>
-                    </a> 
-                    <a href="https://github.com/BernardoFaria/BernardoFaria.github.io/blob/main/projects/trainsafe/trainsafe-video.mp4" type="video/MP4" target="_blank">
-                        <button class="project-button project-video" style="margin-left: 64px;">Video (old version)</button>
-                    </a>
-                </div>
+                <a href="projects/trainsafe/trainsafe-report.pdf" target="_blank">
+                    <button class="project-button project-pdf">PDF</button>
+                </a> 
+                <a href="https://drive.google.com/file/d/1EB-IXSMQgWT_S52xMyoBBlG5yFHIaaFc/view?usp=sharing" type="video/MP4" target="_blank">
+                    <button class="project-button project-video" style="margin-left: 54px;">Video (old version)</button>
+                </a>
             </div>
         </div>
 
         <div class="projects-row">
-            <div class="project-left">
-                <p class="titles fields-of-research"><strong>Information Visualization</strong></p>
+            <div class="project-box" style="padding-bottom: 30px;">
+                <p class="titles" style="font-size: 12px;"><strong>Information Visualization</strong></p>
                 <div class="white-box">
-                    <img class="project-cover" src="projects/music-evolution/music-evolution-homepage.png" alt="music-cover">
+                    <img src="projects/music-evolution/music-evolution-homepage.png" alt="music-cover">
                 </div>
                 <p class="titles project-title">Music Genres And Associated Bands</p>
                 <p class="titles project-definition">An interactive and visual framework that presents information about the evolution of several 
                     music genres (evolution over time, its origins, popularity, most famous artists, geographic distribution) 
                     through six graphical idioms that interact within themselves.</p>
                 <a href="projects/music-evolution/music-evolution-report.pdf" target="_blank">
-                    <button class="project-button project-pdf" style="margin-left: 10px;">PDF</button>
+                    <button class="project-button project-pdf">PDF</button>
                 </a>
-                <a href="https://github.com/BernardoFaria/BernardoFaria.github.io/blob/main/projects/music-evolution/music-evolution-video.mp4" type="vidoe/MP4" target="_blank">
-                    <button class="project-button project-video" style="margin-left: 64px";>Video</button>
+                <a href="https://drive.google.com/file/d/1Q2BI45llxXw8T5H1ybHrt8amf2bwZPJt/view?usp=sharing" type="vidoe/MP4" target="_blank">
+                    <button class="project-button project-video" style="margin-left: 54px";>Video</button>
                 </a>
             </div>
-            <div class="project-right">
-                <p class="titles fields-of-research"><strong>Autonomous Agents and Multi-Agent Systems</strong></p>
+            <div class="project-box" style="padding-bottom: 30px; margin-bottom: 20px;">
+                <p class="titles" style="font-size: 12px;"><strong>Autonomous Agents and Multi-Agent Systems</strong></p>
                 <div class="white-box">
-                    <img class="project-cover" src="projects/battleship/battleship-game.png" alt="battleship-cover">
+                    <img src="projects/battleship/battleship-game.png" alt="battleship-cover">
                 </div>
                 <p class="titles project-title">Battleship</p>
                 <p class="titles project-definition">An agent-based game in Python using three types of agents (Naive agent, Reactive agent, 
-                    and Learning agent) addressing a strategy-type guessing game.</p>
-                <div>
-                    <a href="projects/battleship/battleship-report.pdf" target="_blank">
-                        <button class="project-button project-pdf" style="margin-left: 10px;">PDF</button>
-                    </a>
-                    <a href="https://drive.google.com/file/d/1-nl8rjJCvTz-bJC4bVsCZz9Ibr2w5B87/view?usp=sharing" target="_blank">
-                        <button class="project-button project-video" style="margin-left: 64px;">Video</button>
-                    </a>
-                </div>
+                and Learning agent) addressing a strategy-type guessing game.</p>
+                <a href="projects/battleship/battleship-report.pdf" target="_blank">
+                    <button class="project-button project-pdf">PDF</button>
+                </a>
+                <a href="https://drive.google.com/file/d/1fDRzq-LD-6MDqZjBYjhFiYHaW5macShS/view?usp=sharing" target="_blank">
+                    <button class="project-button project-video" style="margin-left: 54px;">Video</button>
+                </a>
             </div>
         </div>
 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+
         <!-- SCIENTIFIC ACTIVITIES -->
-        <p class="titles chapter">Scientific Activities</p>
+        <p class="titles chapter" style="float: left;">Scientific Activities</p>
         <div class="scientific-activities-chapter">
-            <div class="scientific-activities-box">
-                <p class="titles" style="margin-top: 0px; margin-bottom: 0px; margin-left: 10px"><strong style="color: black; font-size: 12px;">Poster</strong></p>
-                <div class="scientific-activities-cover">
+            <div class="scientific-activities-box" style="padding-bottom: 30px; margin-bottom: 50px;">
+                <p class="titles" style="margin-top: 0px; margin-bottom: 0px;"><strong style="color: black; font-size: 12px;">Poster</strong></p>
+                <div id="poster-size">
                     <a href="scientific-activities/implantigraph-poster.png" target="_blank">
-                        <img class="project-cover" style="margin-left: 10px;" src="scientific-activities/implantigraph-poster.png" alt="implantigraph-poster">
+                        <img src="scientific-activities/implantigraph-poster.png" alt="implantigraph-poster">
                     </a>
                 </div>
-                <a href="scientific-activities/implantigraph-poster.png" target="_blank">
-                    <button class="thesis-button project-images" style="margin-left:10px";>Image</button>
-                </a>
-                <p class="titles" style="font-size: 12px; margin-left: 10px; margin-top: 10px;">Pedro Rodrigues, Bernardo Faria, 
+                <p class="titles doc-captions" >Pedro Rodrigues, Bernardo Faria, 
                     Inês Lúcio, Renata Raidou, Luís Proença, Carlos Zagalo, José J. Mendes, Daniel Lopes, A vr approach for teaching 
                     and learning oral surgical anatomy: preliminary results, Poster presented at 6th International CiiEM Congress, July 5-7, 2023, Caparica.</p>
+                <a href="scientific-activities/implantigraph-poster.png" target="_blank">
+                    <button class="thesis-button project-images">Image</button>
+                </a>
             </div>
         </div>
 
@@ -235,21 +218,21 @@
         <br>
         <br>
         <!-- THESIS -->
-        <p class="titles chapter">Thesis</p>
+        <p class="titles chapter" style="float: left;">Thesis</p>
         <div class="thesis-chapter">
-            <div class="thesis-box">
-                <p class="titles" style="margin-top: 0px; margin-bottom: 0px; margin-left: 10px;"><strong style="color: grey; font-size: 12px;">MSc Thesis</strong></p>
-                <p class="titles" style="margin-top: -10px; margin-bottom: 0px; margin-left: 10px"><strong style="color: black; font-size: 12px;">Computer Science and Engineering</strong></p>
-                <div class="thesis-cover">
+            <div class="thesis-box" style="padding-bottom: 30px; margin-bottom: 20px;">
+                <p class="titles" style="margin-top: 0px; margin-bottom: 0px;"><strong style="color: grey; font-size: 12px;">MSc Thesis</strong></p>
+                <p class="titles" style="margin-top: -10px; margin-bottom: 0px;"><strong style="color: black; font-size: 12px;">Computer Science and Engineering</strong></p>
+                <div id="poster-size">
                     <a href="thesis/Implantigraph-bernardo-faria-thesis.pdf" target="_blank">
-                        <img class="project-cover" style="margin-left: 10px;" src="thesis/thesis-cover.png" alt="thesis-cover">
+                        <img src="thesis/thesis-cover.png" alt="thesis-cover">
                     </a>
                 </div>
-                <a href="thesis/Implantigraph-bernardo-faria-thesis.pdf" target="_blank">
-                    <button class="thesis-button project-pdf" style="margin-left:10px";>PDF</button>
-                </a>
-                <p class="titles" style="font-size: 12px; margin-left: 10px; margin-top: 10px;">B. G. de Faria, Anatomy education applied to dental surgery in virtual reality, 
+                <p class="titles doc-captions">B. G. de Faria, Anatomy education applied to dental surgery in virtual reality, 
                     Final Course Project Thesis, Instituto Superior Técnico, Universidade de Lisboa, 2023.</p>
+                <a href="thesis/Implantigraph-bernardo-faria-thesis.pdf" target="_blank">
+                    <button class="thesis-button project-pdf";>PDF</button>
+                </a>
             </div>
         </div>
 
@@ -257,29 +240,7 @@
 
         <div class="titles footer">
             <p>©  Bernardo Gonçalves de Faria <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> - All rights reserved</p>
-        </div>
-            <!--p class="titles chapter">Projects</p>
-            
-                <h3>Virtual Workspace</h3>
-                <p>A VR tool that allows interaction (writing, highlighting, connections) with and 
-                    within text documents in a virtual environment.</p>
-                <div>
-                    <img src="projects/virtual-workspace/virtual-workspace-unity-draft.png" alt="virtual-workspace">
-                </div>
-                <div>
-                    <img src="projects/virtual-workspace/virtual-workspace-draft.jpg" alt="virtual-workspace-draft">
-                </div>
-                <div>
-                    <img src="projects/virtual-workspace/virtual-workspace-blender-draft.png" alt="virtual-workspace-blender-draft">
-                </div>
-                <div>
-                    <img src="projects/virtual-workspace/virtual-workspace-highlighters.png" alt="virtual-workspace-highlighters">
-                </div>
-                <div>
-                    <img src="projects/virtual-workspace/virtual-workspace-hand-menu.png" alt="virtual-workspace-hand-menu">
-                </div>
-            </div>
-            
+        </div-->
 
     </body>
 </html> 
