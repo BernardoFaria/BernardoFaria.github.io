@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Bernardo Gonçalves de Faria, MSc</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <a href="index.html">
+                <button class="button"><<</button>
+            </a>
+        </div>
+        <div>
+            <script>
+                var srcVideo = sessionStorage.getItem("srcVideoVar");
+                var contentHolder = document.getElementById('vid');
+                contentHolder.innerHTML = srcVideo;
+            </script>
+            <video id="vid" width="320" height="240" controls>
+                <source src="srcVideo" type=video/mp4>
+            </video>
+        </div>
+    </body>
+</html>
