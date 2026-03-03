@@ -248,15 +248,19 @@ a {
   margin-left: 10px;
 }*/
 
-.scientific-activities-chapter {
-  float: left;
+/*.scientific-activities-chapter {
+  /*float: left;
   width: 100%;
-  /*margin-left: 20px;*/
-}
+  margin-left: 20px;
+  width: 100%;
+  float: left;
+  margin: 0px 10px 0px;
+}*/
 
 .scientific-activities-box {
+  width: 150%;
   float: left;
-  width: 100%;
+  margin: 0px 10px 0px;
 }
 
 #poster-size {
@@ -273,11 +277,10 @@ a {
 .thesis-chapter {
   width: 100%;
   float: left;
-  /*margin-left: 20px;*/
 }
 
 .thesis-box {
-  width: 100%;
+  width: 20%;
   float: left;
 }
 
@@ -379,11 +382,13 @@ a {
   }
 
   #poster-size {
-    width: 15%;
+    width: 100%;
   }
 
   .scientific-activities-box {
-    margin-left: 10px;
+    width: 20%;
+    float: left;
+    margin: 0px 10px 0px;
   }
 
   .thesis-box {
@@ -391,7 +396,7 @@ a {
   }
 
   .doc-captions {
-    width: 15%;
+    width: 100%;
   }
 
 }
